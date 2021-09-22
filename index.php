@@ -89,10 +89,7 @@ $title = "privacy e termini"
                         <?php } ?>
 
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+
                 </div>
             </div>
         </nav>
@@ -101,8 +98,8 @@ $title = "privacy e termini"
 
         <article class="container">
             <?php foreach ($data as $chapter) { ?>
-                <h2><?php echo $chapter["title"]; ?> </h2>
-                <p><?php echo $chapter["answers"]; ?> </p>
+                <?php echo $chapter["title"]; ?>
+                <?php echo $chapter["answers"]; ?>
 
 
             <?php } ?>
