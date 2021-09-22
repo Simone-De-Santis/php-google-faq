@@ -1,5 +1,5 @@
 body {
-    padding-top: 9rem;
+    padding-top: 15rem;
 }
 .logo{
     content: url(https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg);
@@ -10,3 +10,17 @@ body {
 li :hover, .active{
 border-bottom: 2px solid blue;
 }
+.account-logo{
+    content: url(https://lh3.googleusercontent.com/ogw/ADea4I6_Yp8sYwUa9EWhda4IXsxsMVPxk45GgPKQuLU4=s32-c-mo);
+    border-radius: 50%;
+    }
+.material-icons{
+    font-size: 30px;
+    
+}
+.material-icons a{
+    text-decoration: none;
+    color: black
+}
+
+   

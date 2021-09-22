@@ -65,6 +65,8 @@ $footer_link = ["google", "tutto su google", "privacy", "termini"]
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -77,6 +79,13 @@ $footer_link = ["google", "tutto su google", "privacy", "termini"]
                     <div class="col">
                         <img src="" alt="" class="logo">
                         <span> <?php echo ucfirst($title); ?></h3>
+                    </div>
+                    <div class="col d-flex justify-content-end">
+
+                        <span class="material-icons ">
+                            <a href="#">apps</a>
+                        </span>
+                        <a href="#"><span class="account-logo"></span> </a>
                     </div>
                 </div>
                 <div class="row ">
