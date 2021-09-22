@@ -51,7 +51,8 @@ $data = [
 
 ];
 $links_navbar = ["introduzione", "norme sulla privacy", "termini di servizio ", "tecnologie", "domande frequenti"];
-$title = "privacy e termini"
+$title = "privacy e termini";
+$footer_link = ["google", "tutto su google", "privacy", "termini"]
 ?>
 
 
@@ -70,38 +71,30 @@ $title = "privacy e termini"
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><?php echo $title ?> </a>
-
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <?php foreach ($links_navbar as $link) { ?>
-
-                            <li class="nav-item"><a class="nav-link" href="#"><?php echo ucfirst($link); ?></a></li>
-
-
-
-                        <?php } ?>
-
-                    </ul>
-
+        <div class="fixed-top p-4 bg-white shadow-sm  mb-5 bg-body rounded">
+            <div class="contaner-fluid">
+                <div class="row">
+                    <div class="col">
+                        <img src="" alt="" class="logo">
+                        <span> <?php echo ucfirst($title); ?></h3>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col">
+                        <ul class="navbar-nav d-flex flex-row">
+                            <?php foreach ($links_navbar as $link) { ?>
+                                <li class="nav-item pe-4"><a class="nav-link text-reset " href="#"><?php echo ucfirst($link); ?></a></li>
+                            <?php } ?>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </nav>
     </header>
     <main>
-
         <article class="container">
             <?php foreach ($data as $chapter) { ?>
                 <?php echo $chapter["title"]; ?>
                 <?php echo $chapter["answers"]; ?>
-
-
             <?php } ?>
         </article>
     </main>

@@ -1,4 +1,12 @@
 body {
-   
-    padding-top: 4.5rem;
+    padding-top: 9rem;
+}
+.logo{
+    content: url(https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg);
+    display: inline-block;
+    height: 24px;
+    width: 74px;
+}
+li :hover, .active{
+border-bottom: 2px solid blue;
 }
